@@ -2,7 +2,7 @@
 //2 types   STACK(used in primitive)     HEAP(used in non-primitive)
 console.log("*******STACK*******")  //Values on stack are stored directly, and access is by value.(copy is passed)
 
-let myName = "kashaf fatima"
+let myName = "kashaf fatima" 
 
 let anotherName = myName
 anotherName = "zainab fatima"
