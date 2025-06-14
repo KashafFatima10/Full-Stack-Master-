@@ -66,7 +66,7 @@ let str3 = str1 + str2
 // console.log(1 + 2 + "2");  //32
 
 // console.log( (3 + 4) * 5 % 3);
-
+  
 // console.log(+true) //1
 // console.log(+"")  //0
 
