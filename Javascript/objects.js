@@ -1,6 +1,8 @@
 //objects are used to store various keyed collections and more complex entities.
-//  Objects can be created using the Object() constructor or the object literal syntax.
+//  Objects can be created using the Object() constructor(singleton) or the object literal syntax.
 
+
+//object literals
 const mySymbol=Symbol("key1")
 
 const myObj={
