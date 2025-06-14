@@ -64,9 +64,16 @@ let str3 = str1 + str2
 // console.log(1 + "2");  //12
 // console.log("1" + 2 + 2);  //122
 // console.log(1 + 2 + "2");  //32
+//if first string then it will convert whole in string
+//if first numbers then perform operator on numbers and concatenate it with string
+//if both string, concatenate them
+
 
 // console.log( (3 + 4) * 5 % 3);
   
+// console.log( (3 + 4) * 5 % 3);  //we prefer to use brackets to avoid confusion
+
+
 // console.log(+true) //1
 // console.log(+"")  //0
 
@@ -76,6 +83,10 @@ num1=num2=num3= 2+2
 let counter =100
 counter++
 console.log(counter)
+
+let myCounter =100
+++myCounter
+console.log(myCounter)
 
 
 
