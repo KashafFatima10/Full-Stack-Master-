@@ -39,7 +39,7 @@ const obj4={...obj1,...obj2}
 console.log(obj4)
 
 
-const users=[
+const users=[    //array of various objects
     {
         id:1,
         name:"kashaf",
@@ -64,3 +64,29 @@ console.log(Object.entries(myUser)) //convert each key,value pair in separate ar
 
 console.log(Object.hasOwnProperty('name'))  //check if name key present in object or not
 console.log(Object.hasOwnProperty('email'))
+
+
+/*****************OBJECTS de-structure ***************/
+//Object Destructuring in JavaScript means unpacking properties from an object into separate variables
+console.log("****************")
+
+const course={
+    courseName:"Calculus",
+    price:999,
+    courseInstructor:"Ali Ahmed"
+}
+
+// console.log(course.courseInstructor)  //way to access value 
+const {courseInstructor:instructor}=course  
+console.log(instructor)
+
+
+//****************JSON API ******/
+console.log("*****************json api***********");
+//In JSON API format key and values both are in strings
+// {
+//     "name":"kashaf",
+//     "course":"ict",
+//     "price":"free"
+// }
+
