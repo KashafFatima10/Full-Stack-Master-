@@ -3,7 +3,6 @@
 2.Memory creation phase
 3.Exection phase */
 
-
 let val1=10
 let val2=5
 function addNum(num1,num2){
