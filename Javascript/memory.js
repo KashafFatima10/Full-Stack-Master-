@@ -1,4 +1,4 @@
-//memoryin JS
+//memory in JS
 //2 types   STACK(used in primitive)     HEAP(used in non-primitive)
 console.log("*******STACK*******")  //Values on stack are stored directly, and access is by value.(copy is passed)
 

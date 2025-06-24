@@ -53,7 +53,7 @@ console.log(addOne(5))  //can access addOne() before defining it in this case
 function addOne(num){  //simply defined function
     return num+1;
 }
-
+ 
 //console.log(addTwo(5))  //Error: Cannot access 'addTwo' before initialization
 const addTwo=function(num){  //stored return of function in variable
     return num+2;
