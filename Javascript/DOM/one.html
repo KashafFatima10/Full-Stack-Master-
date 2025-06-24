@@ -1,0 +1,107 @@
+<!--Document Object Model-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM Learning</title>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 style="color:brown" id="title" class="heading">DOM introduction in JS</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure rerum sequi corporis amet!</p>
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
+
+<!--DOM-->
+<!--window --- document ---HTML ---head(meta(attribute)+title(text node))+body(div(h1(attribute+textnode)+p(text node))) -->
+
+
+<!--Javascript DOM notes-->
+<!--1. document.getElementById("title")
+This method selects an element by its ID.
+Example:
+If the HTML is:
+<h1 id="title">Welcome</h1>
+Then this method will select that <h1> element.
+
+2. .id
+Returns the ID of the selected element.
+Example:
+document.getElementById("title").id
+Output: "title"
+
+3. .getAttribute("id")
+Returns the value of any specific attribute of the element.
+Example:
+document.getElementById("title").getAttribute("id")
+Output: "title"
+
+4. .setAttribute("class", "highlight")
+Adds a new attribute or updates an existing attribute of the element.
+Example:
+document.getElementById("title").setAttribute("class", "highlight")
+Now, the class of the element is "highlight".
+
+5. .style.backgroundColor = "yellow"
+Changes the background color of an element.
+Example:
+element.style.backgroundColor = "yellow"
+
+6. .textContent
+Returns all the text inside the element, even the hidden text.
+Example:
+console.log(title.textContent)
+
+7. .innerText
+Returns only the visible text of an element.
+Example:
+console.log(title.innerText)
+
+8. .innerHTML
+Returns the HTML content inside an element, including tags.
+Example:
+console.log(title.innerHTML)
+
+9. document.getElementsByClassName("title")
+Selects all elements with the class name "title" and returns them as a collection.
+
+10. document.querySelector()
+Selects the first element that matches the given CSS selector.
+Example:
+If your HTML is:
+<h1 style="color: coral" class="title" id="title">JavaScript</h1>
+Then:
+document.querySelector('#title') → Selects element with id "title"
+document.querySelector('.title') → Selects element with class "title"
+document.querySelector('h1') → Selects the first <h1> element
+
+Also, you can select nested elements:
+Example:
+
+const myList = document.querySelector('ul');
+myList.querySelector('li'); // Selects first <li> inside the <ul>
+11. document.querySelectorAll()
+Selects all matching elements and returns them as a NodeList.
+Example:
+document.querySelectorAll('h1') → Selects all <h1> elements
+document.querySelectorAll('li') → Selects all <li> elements
+
+12. forEach method with NodeList
+The forEach method applies some action to each element in a NodeList.
+Example:
+
+const paragraphs = document.querySelectorAll('p');
+paragraphs.forEach(function(p) {
+  p.style.color = 'blue';
+});
+This will change the color of all <p> elements to blue.-->
