@@ -113,4 +113,4 @@ const myCartPrice=shoppingCart.reduce( (accumulator, item) => {
     return accumulator+item.price
 },0)
 
-console.log(myCartPrice)
+console.log(myCartPrice);
