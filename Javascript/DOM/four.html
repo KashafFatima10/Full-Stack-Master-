@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+</head>
+<body style="background-color: black; color:white;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+
+<script>
+    //editing element in DOM
+    function addLanguage(langName){
+        const list=document.createElement('li');
+        list.innerHTML=`${langName}`;
+        document.querySelector('.language').appendChild(list)
+
+    }
+    addLanguage("python")
+    addLanguage("React JS")
+
+    function addOptimizedLanguage(langName){   //optimized approach
+        const list=document.createElement('li');
+        const addText=document.createTextNode(langName);
+        list.appendChild(addText);
+        document.querySelector('.language').appendChild(list)
+
+    }
+    addOptimizedLanguage("Typescript")
+    addOptimizedLanguage("Ruby")
+
+    //but functions do same work just adding text feature is different in both
+
+    //Editing element in DOM
+    //1
+    const secondLang = document.querySelector("li:nth-child(2)");  //select 2nd element in list
+    //secondLang.innerHTML="Kotlin"  //this approach is used and work roperly but not optimized
+    //2
+    const newList = document.createElement('li');  //another approach
+    newList.textContent="Kotlin"
+    secondLang.replaceWith(newList);
+    //3
+    const firstLang=document.querySelector("li:first-child")
+    firstLang.outerHTML="<li>C++</li?";
+
+    //Removing element in DOM
+    const lastLang=document.querySelector("li:last-child");
+    lastLang.remove();
+
+
+
+</script>
+</html>
