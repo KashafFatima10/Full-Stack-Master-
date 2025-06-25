@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>API Request states</title>
+</head>
+<body style="background-color: #212121; color: white; font-family: monospace;">
+    0  UNSENT:  Client has been created. open() not called yet.<br>
+    1  OPENED:  open() has been called.<br>
+    2  HEADERS_RECEIVED:  send() has been called, and headers and status are available.<br>
+    3  LOADING:  Downloading; responseText holds partial data.<br>
+    4  DONE:  The operation is complete.
+</body>
+
+<script>
+    const requestUrl = 'https://api.github.com/users/kashaffatima10'  //url
+    const xhr= new XMLHttpRequest();  //object created
+    xhr.open('GET', requestUrl);   //prepare request
+
+    xhr.onreadystatechange=function(){
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+            const data=JSON.parse(this.responseText);  //response in JSON format
+            //console.log(typeof data);  //string
+            console.log(data);
+            console.log(data.followers);
+            
+        }
+    }
+
+    xhr.send();   //send request
+</script>
+</html>
+
+<!-- json formatter is used to read and understand api-->
