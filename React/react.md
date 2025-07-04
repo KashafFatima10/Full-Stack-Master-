@@ -1,22 +1,12 @@
 # What is React?
 React is a JavaScript library for building user interfaces (UI).
-# Key Features
-Component-Based Architecture
-
-Virtual DOM for fast rendering
-
-Declarative UI
-
-Reusable Components
-
-Supports hooks for managing state and side effect
 
 # setup
 npx create-react-app my-app    (node package executor )
 cd my-app
 npm start
 
-# // new way 
+# new way 
 npm create vite@latest
 project name
 react
@@ -27,7 +17,7 @@ npm install
 npm run dev
 ####
 react and react-dom libraries
-# main.jsx   or   index.js ---> entry point of react
+# main.jsx   or   index.js => these are entry point to react
 
 # tailwind
 npm install tailwindcss @tailwindcss/vite
@@ -37,9 +27,9 @@ plugins...> tailwaindcss(),
 # index.css
 @import "tailwindcss";
 
-# ########## DEVUI to get components
+# #### DEVUI to get components ####
 
-# *************************HOOKS
+# ****HOOKS****
 # useState
 To store and update local state in a functional component.
 const [state, setState] = useState(initialValue);
