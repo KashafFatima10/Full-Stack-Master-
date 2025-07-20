@@ -1,10 +1,19 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+/* eslint-disable react-refresh/only-export-components */
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
-createRoot(document.getElementById('root')).render(
+function MyApp(){
+  return(
+    <div>
+      <h1>Custom React</h1>
+    </div>
+  )
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <MyApp />
   </StrictMode>,
 )
