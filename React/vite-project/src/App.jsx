@@ -1,10 +1,17 @@
 
-import './App.css'
+
+import MyApp from "./function.jsx"
+
 
 function App() {
-  
+  const username = "kashaf"
+
   return (
-   <h1>Hello vite + react project! | kashaf</h1>
+    <>
+    
+    <h1>Welcome from {username}</h1>
+    <MyApp/>
+   </>
   )
 }
 
